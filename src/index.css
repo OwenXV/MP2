@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #E5E4E2	;
+}
+
+.navibar{
+  height: 80px;
+  background-color:#2f75a0;
+}
+.offCan{
+  background-color: #2f75a0;
+}
+
+.errorSection{
+  background-color: #3D3C3A;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
