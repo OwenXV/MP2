@@ -1,7 +1,10 @@
 async function getData(){
-    let response = await fetch("https://dummyjson.com/products/1")
+    let response = await fetch("https://jsonplaceholder.typicode.com/posts")
     return response.json()
 }
 
 getData()
 .then(jsonData => console.log(jsonData))
+
+console.log(getData)
+
