@@ -14,7 +14,7 @@ function Navigation () {
         {[true && 'sm' && 'md'].map((expand) => (
           <Navbar className="navibar" key={expand} expand={expand}>
             <Container>
-              <Navbar.Brand href="#" className="text-white fs-1">Movie</Navbar.Brand>
+              <Navbar.Brand href="#" className="text-white fs-1">NEPFLIX</Navbar.Brand>
               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
               <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-${expand}`}
@@ -30,9 +30,10 @@ function Navigation () {
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3 text-white">
                     <Nav.Link href="/"className="text-white fs-5">Home</Nav.Link>
-                    <Nav.Link href="/Categories" className="text-white fs-5">Categories</Nav.Link>
-                    <Nav.Link href="/Error" className="text-white fs-5">Error</Nav.Link>
-                    <Nav.Link href="/" className="text-white fs-5">Contact</Nav.Link>
+                    <Nav.Link href="/Categories" className="text-white fs-5">TV Shows</Nav.Link>
+                    <Nav.Link href="/Error" className="text-white fs-5">Movies</Nav.Link>
+                    <Nav.Link href="/Error" className="text-white fs-5">Categories</Nav.Link>
+                    <Nav.Link href="/" className="text-white fs-5">Login/Sign up</Nav.Link>
                   </Nav>  
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
