@@ -33,7 +33,7 @@ function Navigation () {
                     <Nav.Link href="/TVshow" className="text-white fs-5">TV Shows</Nav.Link>
                     <Nav.Link href="/Movies" className="text-white fs-5">Movies</Nav.Link>
                     <Nav.Link href="/FAQ" className="text-white fs-5">FAQs</Nav.Link>
-                    <Nav.Link href="/" className="text-white fs-5">Login/Sign up</Nav.Link>
+                    <Nav.Link href="/Login" className="text-white fs-5">Login/Sign up</Nav.Link>
                   </Nav>  
                 </Offcanvas.Body>
               </Navbar.Offcanvas>

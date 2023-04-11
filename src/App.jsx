@@ -5,11 +5,9 @@ import FAQ from "./pages/FAQ"
 import Navigation from "./components/Navigation"
 import Movies from "./pages/Movies"
 import Tvshow from "./pages/Tvshow";
+import Login from "./pages/Login"
 import Error from "./pages/Error"
 import SharedLayout from "./pages/SharedLayout"
-
-
-
 
 function App() {
 
@@ -21,6 +19,7 @@ function App() {
           <Route path='FAQ' element={<FAQ/>}/>
           <Route path='Movies' element={<Movies/>}/>
           <Route path='Tvshow' element={<Tvshow/>}/>
+          <Route path='Login' element={<Login/>}/>
         </Route>
         <Route path='*' element={<Error/>}/>  
       </Routes>
