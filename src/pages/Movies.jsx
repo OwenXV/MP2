@@ -11,7 +11,7 @@ function Movies () {
   const [movies,setMovies]= useState([])
   const  getData = async() =>{
     try{
-      const response =  await fetchData.get('/MostPopularMovies/k_7l5b72og');
+      const response =  await fetchData.get('/MostPopularMovies/k_p3j718rr');
       setMovies(response.data.items)
       // console.log(response)
     }catch (error){
