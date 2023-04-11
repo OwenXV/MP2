@@ -1,4 +1,4 @@
-import { Row, Col,Container,Card} from "react-bootstrap"
+import { Row, Col,Container,Card, Modal} from "react-bootstrap"
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -10,12 +10,14 @@ import MOV from '../assets/MOV.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css'
 import fetchData from "../lib/axios";
+import Button from 'react-bootstrap/Button';
+
 
 function Home() {
   const [movies,setMovies]= useState([])
   const  getData = async() =>{
     try{
-      const res =  await fetchData.get('/BoxOffice/k_68ub1sw3');
+      const res =  await fetchData.get('/BoxOffice/k_hbehap11');
       setMovies(res.data.items)
     }catch (error){
       console.log(error.response)
@@ -28,7 +30,7 @@ function Home() {
   const [movies2,setMovies2]= useState([])
   const  getData2 = async() =>{
     try{
-      const res =  await fetchData.get('/Comingsoon/k_68ub1sw3');
+      const res =  await fetchData.get('/Comingsoon/k_hbehap11');
       setMovies2(res.data.items)
     }catch (error){
       console.log(error.response)
@@ -41,7 +43,7 @@ function Home() {
   const [movies3,setMovies3]= useState([])
   const  getData3 = async() =>{
     try{
-      const res =  await fetchData.get('/InTheaters/k_68ub1sw3');
+      const res =  await fetchData.get('/InTheaters/k_hbehap11');
       setMovies3(res.data.items)
     }catch (error){
       console.log(error.response)
@@ -51,8 +53,6 @@ function Home() {
     getData3();
   },[]);
 
-
-
   return (
     <div className="homepage">
       <section className="hero">
@@ -61,8 +61,8 @@ function Home() {
       <section className="trending-sec pt-5">
           <h2 className="text-white pb-4"> Trending Videos Today</h2>
           <Swiper
-            slidesPerView={6}
-            spaceBetween={1}
+            slidesPerView={5}
+            spaceBetween={10}
             freeMode={true}
             modules={FreeMode}
             className="mySwiper"
@@ -77,10 +77,10 @@ function Home() {
           </Swiper>
       </section>
       <section className="comming-sec text-white pt-4">
-      <h1>Comming Soon</h1> 
+      <h1>Coming Soon</h1> 
       <Swiper
-            slidesPerView={6}
-            spaceBetween={1}
+            slidesPerView={5}
+            spaceBetween={10}
             freeMode={true}
             modules={FreeMode}
             className="mySwiper"
@@ -97,8 +97,8 @@ function Home() {
       <section className="boxoffice-sec text-white pt-4">
       <h1>Box Office</h1> 
       <Swiper
-            slidesPerView={6}
-            spaceBetween={1}
+            slidesPerView={5}
+            spaceBetween={10}
             freeMode={true}
             modules={FreeMode}
             className="mySwiper"
@@ -107,10 +107,8 @@ function Home() {
           {movies3.map((movies3)=>{
           return  <SwiperSlide key={movies3.id}>
              <img src={movies3.image}/> </SwiperSlide>
-
           })}
-          </Swiper>
-      
+      </Swiper>
       </section>
     </div>
 

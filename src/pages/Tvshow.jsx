@@ -21,7 +21,7 @@ function Tvshow  () {
   },[]);
   return (
     <div>
-      <h1 className="text-white pt-5">Top Movies</h1>
+      <h1 className="text-white pt-5">Top Shows</h1>
       <Swiper
           slidesPerView={6}
           spaceBetween={1}

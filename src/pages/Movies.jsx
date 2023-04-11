@@ -25,7 +25,7 @@ function Movies () {
     <div>
       <h1 className="text-white pt-5 pb-3">Top Movies</h1>
       <Swiper
-          slidesPerView={6}
+          slidesPerView={5}
           spaceBetween={1}
           freeMode={true}
           modules={FreeMode}
