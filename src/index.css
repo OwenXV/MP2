@@ -8,7 +8,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #E5E4E2;
+  background-color: #171717;
   font-family: 'Roboto';
 }
 
@@ -26,19 +26,20 @@ body{
   position: relative;
 }
 
-.trending-sec{
-  background-color: #171717;
-}
-
 .navbar-toggler-icon{
   filter:invert(80)
 }
 .mySwiper img{
-  height: 150px;
-  width: 350px;
+  height: 250px;
+  width: 450px;
   object-fit: cover;
+  cursor: pointer;
 }
 
+.FAQ-sec{
+  background-color: #171717;
+  height: 70vh;
+}
 
 
 .errorSection{
