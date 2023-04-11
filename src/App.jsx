@@ -8,14 +8,16 @@ import Tvshow from "./pages/Tvshow";
 import Login from "./pages/Login"
 import Error from "./pages/Error"
 import SharedLayout from "./pages/SharedLayout"
+import LandingPage from "./pages/Landing";
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
+      <Route index element={<LandingPage/>}/> 
         <Route path='/' element ={<SharedLayout/>}>
-          <Route index element={<Home/>}/>  
+        <Route path='Home' element={<Home/>}/>
           <Route path='FAQ' element={<FAQ/>}/>
           <Route path='Movies' element={<Movies/>}/>
           <Route path='Tvshow' element={<Tvshow/>}/>

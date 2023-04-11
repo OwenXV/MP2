@@ -29,7 +29,7 @@ function Navigation () {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3 text-white">
-                    <Nav.Link href="/"className="text-white fs-5">Home</Nav.Link>
+                    <Nav.Link href="/Home"className="text-white fs-5">Home</Nav.Link>
                     <Nav.Link href="/TVshow" className="text-white fs-5">TV Shows</Nav.Link>
                     <Nav.Link href="/Movies" className="text-white fs-5">Movies</Nav.Link>
                     <Nav.Link href="/FAQ" className="text-white fs-5">FAQs</Nav.Link>

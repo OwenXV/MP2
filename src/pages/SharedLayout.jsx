@@ -3,7 +3,8 @@ import Navigation from '../components/Navigation'
 import Footer from  '../components/Footer'
 
 
-function Home() {
+
+function Landing() {
   return (
     <>
         <Navigation/>
@@ -13,4 +14,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Landing
