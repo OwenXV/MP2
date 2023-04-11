@@ -30,8 +30,8 @@ body{
   filter:invert(80)
 }
 .mySwiper img{
-  height: 550px;
-  width: 450px;
+  /* height: 550px;
+  width: 450px; */
   object-fit: cover;
   cursor: pointer;
 }

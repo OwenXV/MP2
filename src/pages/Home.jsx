@@ -71,8 +71,7 @@ function Home() {
           {movies.map((movies)=>{
           return  <SwiperSlide key={movies.id}>
              <img src={movies.image}/> </SwiperSlide>
-            
-
+          
           })}
           </Swiper>
       </section>
