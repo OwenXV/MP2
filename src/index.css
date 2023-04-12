@@ -30,10 +30,13 @@ body{
   filter:invert(80)
 }
 .mySwiper img{
-  /* height: 550px;
-  width: 450px; */
+  /* height: 286px;
+  width: 195px; */
   object-fit: cover;
   cursor: pointer;
+}
+.cards{
+  background-color: none;
 }
 
 .FAQ-sec{

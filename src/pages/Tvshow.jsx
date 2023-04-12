@@ -4,12 +4,13 @@ import fetchData from "../lib/axios";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { FreeMode, Pagination } from "swiper";
+import { Row,Col, Container,Card } from "react-bootstrap";
 
 function Tvshow  () {
   const [movies,setMovies]= useState([])
   const  getData = async() =>{
     try{
-      const response =  await fetchData.get('/MostPopularTVs/k_7l5b72og');
+      const response =  await fetchData.get('/Top250TVs/k_830rz69a');
       setMovies(response.data.items)
       // console.log(response)
     }catch (error){
@@ -21,23 +22,21 @@ function Tvshow  () {
   },[]);
   return (
     <div>
-      <h1 className="text-white pt-5">Top Shows</h1>
-      <Swiper
-          slidesPerView={6}
-          spaceBetween={1}
-          freeMode={true}
-          modules={FreeMode}
-          className="mySwiper"
-        >
-
-        {movies.map((movies)=>{
-        return  <SwiperSlide key={movies.id}>
-           <img src={movies.image}/> </SwiperSlide>
-          
-
-        })}
-        </Swiper>
-    
+      <h1 className="text-white pt-5 pb-3 text-center">Top Shows</h1>
+        <Container>
+          <Row >
+          {movies.map((movies)=>{
+            return  <Col>
+                    <Card style={{ width: '18rem', height:'30rem' }} key={movies.id} className="text-center mb-3" border="light">
+                      <Card.Img variant="top" src={movies.image} />
+                      <Card.Body>
+                        <Card.Title className="text-center">{movies.title}</Card.Title>
+                      </Card.Body>
+                    </Card>
+            </Col>
+              })}
+          </Row>
+        </Container>    
     </div>
   )
       }
