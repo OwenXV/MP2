@@ -17,7 +17,7 @@ function Home() {
   const [movies,setMovies]= useState([])
   const  getData = async() =>{
     try{
-      const res =  await fetchData.get('/BoxOffice/k_594n1k1x');
+      const res =  await fetchData.get('/BoxOffice/k_4sojyw9b');
       setMovies(res.data.items)
     }catch (error){
       console.log(error.response)
@@ -30,7 +30,7 @@ function Home() {
   const [movies2,setMovies2]= useState([])
   const  getData2 = async() =>{
     try{
-      const res =  await fetchData.get('/Comingsoon/k_594n1k1x');
+      const res =  await fetchData.get('/Comingsoon/k_4sojyw9b');
       setMovies2(res.data.items)
     }catch (error){
       console.log(error.response)
@@ -43,7 +43,7 @@ function Home() {
   const [movies3,setMovies3]= useState([])
   const  getData3 = async() =>{
     try{
-      const res =  await fetchData.get('/InTheaters/k_594n1k1x');
+      const res =  await fetchData.get('/InTheaters/k_4sojyw9b');
       setMovies3(res.data.items)
     }catch (error){
       console.log(error.response)

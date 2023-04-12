@@ -38,12 +38,19 @@ body{
 .cards{
   background-color: none;
 }
+#cardID{
+  cursor: pointer;
+}
 
 .FAQ-sec{
   background-color: #171717;
   height: 70vh;
 }
 
+.login-sec{
+  height: 68vh;
+  padding-top: 120px;
+}
 
 .errorSection{
   background-color: #3D3C3A;
